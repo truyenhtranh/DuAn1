@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2E2E"
+    tools:context=".HomeActivity">
+    <?xml version="1.0" encoding="utf-8"?>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ViewFlipper
+                android:id="@+id/vfSlideShow"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="5dp">
+            </ViewFlipper>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#151515">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="15dp"
+                    android:text="Truyện Hot"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#fff"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:onClick="truyenhot"
+                    android:paddingRight="15dp"
+                    android:text="Xem tất cả ->"
+                    android:textColor="#A4A4A4"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gvTruyenHot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"></GridView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#151515">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="15dp"
+                    android:text="Truyện Hot"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#fff"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:onClick="truyenhot"
+                    android:paddingRight="15dp"
+                    android:text="Xem tất cả ->"
+                    android:textColor="#A4A4A4"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <GridView
+                android:id="@+id/gvTruyenHot1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"></GridView>
+        </LinearLayout>
+
+</ScrollView>
